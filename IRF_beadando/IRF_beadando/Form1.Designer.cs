@@ -46,7 +46,7 @@
             // 
             // btnLetrehozas
             // 
-            this.btnLetrehozas.Location = new System.Drawing.Point(151, 103);
+            this.btnLetrehozas.Location = new System.Drawing.Point(151, 156);
             this.btnLetrehozas.Name = "btnLetrehozas";
             this.btnLetrehozas.Size = new System.Drawing.Size(172, 23);
             this.btnLetrehozas.TabIndex = 1;
@@ -66,7 +66,7 @@
             // 
             // btnImportalas
             // 
-            this.btnImportalas.Location = new System.Drawing.Point(151, 159);
+            this.btnImportalas.Location = new System.Drawing.Point(151, 94);
             this.btnImportalas.Name = "btnImportalas";
             this.btnImportalas.Size = new System.Drawing.Size(172, 23);
             this.btnImportalas.TabIndex = 3;
@@ -80,7 +80,7 @@
             this.btnUtvonal.Name = "btnUtvonal";
             this.btnUtvonal.Size = new System.Drawing.Size(172, 23);
             this.btnUtvonal.TabIndex = 4;
-            this.btnUtvonal.Text = "Útvonal létrehozása";
+            this.btnUtvonal.Text = "Útvonaltervezés";
             this.btnUtvonal.UseVisualStyleBackColor = true;
             this.btnUtvonal.Click += new System.EventHandler(this.btnUtvonal_Click);
             // 

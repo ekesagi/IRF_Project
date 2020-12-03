@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace IRF_beadando
 {
-    public partial class UtvonalLetrehozasa : Form
+    public partial class Utvonaltervezes : Form
     {
-        public UtvonalLetrehozasa()
+        public Utvonaltervezes()
         {
             InitializeComponent();
         }

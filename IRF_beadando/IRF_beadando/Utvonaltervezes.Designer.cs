@@ -1,6 +1,6 @@
 ﻿namespace IRF_beadando
 {
-    partial class UtvonalLetrehozasa
+    partial class Utvonaltervezes
     {
         /// <summary>
         /// Required designer variable.

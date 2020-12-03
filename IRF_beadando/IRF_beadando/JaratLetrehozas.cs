@@ -15,6 +15,16 @@ namespace IRF_beadando
         public JaratLetrehozas()
         {
             InitializeComponent();
+            foreach (var varos in Form1.Varosok)
+            {
+                cbKiinduloVaros.Items.Add(varos.Nev);
+                cbErkezoVaros.Items.Add(varos.Nev);
+            }
+        }
+
+        private void btnMentes_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
