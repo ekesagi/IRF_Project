@@ -16,5 +16,29 @@ namespace IRF_beadando
         {
             InitializeComponent();
         }
+
+        private void btnLetrehozas_Click(object sender, EventArgs e)
+        {
+            JaratLetrehozas j = new JaratLetrehozas();
+            j.Show();
+        }
+
+        private void btnImportalas_Click(object sender, EventArgs e)
+        {
+            AdatokImportalasa i = new AdatokImportalasa();
+            i.Show();
+        }
+
+        private void btnExportalas_Click(object sender, EventArgs e)
+        {
+            AdatokExportalasa x = new AdatokExportalasa();
+            x.Show();
+        }
+
+        private void btnUtvonal_Click(object sender, EventArgs e)
+        {
+            UtvonalLetrehozasa u = new UtvonalLetrehozasa();
+            u.Show();
+        }
     }
 }
