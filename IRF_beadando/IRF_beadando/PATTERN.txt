@@ -1,0 +1,3 @@
+﻿A projekt során lesz egy absztrakt osztály, amit 'jarat'-ként nevezek el. Ebből az absztrakt osztályból 3 osztály származik:
+'buszjarat', 'vonatjarat', 'repulojarat'. Mindegyik 'jarat' rendelkezik azonos tulajdonságokkal, amik a következőek: indulási 
+idő,megérkezési idő, az előző két tulajdonság alapján időtartam, út hossza.
