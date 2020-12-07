@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace IRF_beadando
 {
-    class Jarat
+    public class Jarat
     {
     }
 }

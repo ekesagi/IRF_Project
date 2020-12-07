@@ -39,11 +39,13 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.cbJarmu = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.tbUthossz = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnMentes
             // 
-            this.btnMentes.Location = new System.Drawing.Point(331, 324);
+            this.btnMentes.Location = new System.Drawing.Point(331, 370);
             this.btnMentes.Name = "btnMentes";
             this.btnMentes.Size = new System.Drawing.Size(75, 23);
             this.btnMentes.TabIndex = 0;
@@ -88,7 +90,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(212, 207);
+            this.label3.Location = new System.Drawing.Point(212, 253);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(83, 17);
             this.label3.TabIndex = 6;
@@ -98,7 +100,7 @@
             // 
             this.dtpInduasiIdo.CustomFormat = "MM/dd/yyyy hh:mm:ss";
             this.dtpInduasiIdo.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpInduasiIdo.Location = new System.Drawing.Point(348, 207);
+            this.dtpInduasiIdo.Location = new System.Drawing.Point(348, 253);
             this.dtpInduasiIdo.Name = "dtpInduasiIdo";
             this.dtpInduasiIdo.Size = new System.Drawing.Size(229, 22);
             this.dtpInduasiIdo.TabIndex = 7;
@@ -107,7 +109,7 @@
             // 
             this.dtpErkezesiIdo.CustomFormat = "MM/dd/yyyy hh:mm:ss";
             this.dtpErkezesiIdo.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpErkezesiIdo.Location = new System.Drawing.Point(348, 258);
+            this.dtpErkezesiIdo.Location = new System.Drawing.Point(348, 304);
             this.dtpErkezesiIdo.Name = "dtpErkezesiIdo";
             this.dtpErkezesiIdo.Size = new System.Drawing.Size(229, 22);
             this.dtpErkezesiIdo.TabIndex = 8;
@@ -115,7 +117,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(212, 263);
+            this.label4.Location = new System.Drawing.Point(212, 309);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(89, 17);
             this.label4.TabIndex = 9;
@@ -142,11 +144,29 @@
             this.cbJarmu.Size = new System.Drawing.Size(121, 24);
             this.cbJarmu.TabIndex = 12;
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(212, 205);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(63, 17);
+            this.label5.TabIndex = 14;
+            this.label5.Text = "Úthossz:";
+            // 
+            // tbUthossz
+            // 
+            this.tbUthossz.Location = new System.Drawing.Point(348, 205);
+            this.tbUthossz.Name = "tbUthossz";
+            this.tbUthossz.Size = new System.Drawing.Size(121, 22);
+            this.tbUthossz.TabIndex = 15;
+            // 
             // JaratLetrehozas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(790, 387);
+            this.ClientSize = new System.Drawing.Size(790, 470);
+            this.Controls.Add(this.tbUthossz);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.cbJarmu);
             this.Controls.Add(this.label4);
@@ -178,5 +198,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ComboBox cbJarmu;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox tbUthossz;
     }
 }

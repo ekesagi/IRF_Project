@@ -81,7 +81,6 @@
     <Compile Include="Utvonaltervezes.Designer.cs">
       <DependentUpon>Utvonaltervezes.cs</DependentUpon>
     </Compile>
-    <Compile Include="Varos.cs" />
     <Compile Include="Vonatjarat.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

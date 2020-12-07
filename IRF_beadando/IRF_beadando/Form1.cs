@@ -12,24 +12,25 @@ namespace IRF_beadando
 {
     public partial class Form1 : Form
     {
-        public static List<Varos> Varosok = new List<Varos>();
+        public static List<string> Varosok = new List<string>();
+        public static List<Jarat> Jaratok = new List<Jarat>(); 
 
         public Form1()
         {
             InitializeComponent();
-            Varosok.Add(new Varos { Nev = "Veszprém" });
-            Varosok.Add(new Varos { Nev = "Pécs" });
-            Varosok.Add(new Varos { Nev = "Budapest" });
-            Varosok.Add(new Varos { Nev = "Győr" });
-            Varosok.Add(new Varos { Nev = "Eger" });
-            Varosok.Add(new Varos { Nev = "London" });
-            Varosok.Add(new Varos { Nev = "Párizs" });
-            Varosok.Add(new Varos { Nev = "Bécs" });
-            Varosok.Add(new Varos { Nev = "Esztergom" });
-            Varosok.Add(new Varos { Nev = "Balatonfüred" });
-            Varosok.Add(new Varos { Nev = "Szeged" });
-            Varosok.Add(new Varos { Nev = "Amszterdam" });
-            Varosok.Add(new Varos { Nev = "Békéscsaba" });
+            Varosok.Add("Veszprém");
+            Varosok.Add("Pécs");
+            Varosok.Add("Budapest");
+            Varosok.Add("Győr");
+            Varosok.Add("Eger");
+            Varosok.Add("London");
+            Varosok.Add("Párizs");
+            Varosok.Add("Esztergom");
+            Varosok.Add("Balatonfüred");
+            Varosok.Add("Szeged");
+            Varosok.Add("Amszterdam");
+            Varosok.Add("Békéscsaba");
+            Varosok.Add("Pápa");
         }
 
         private void btnLetrehozas_Click(object sender, EventArgs e)
