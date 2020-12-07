@@ -33,6 +33,7 @@ namespace IRF_beadando
                 bj.IndulasiHely = cbKiinduloVaros.SelectedItem.ToString();
                 bj.UtHossz = Convert.ToInt32(tbUthossz.Text);
                 bj.Idotartam = (int)Math.Floor((bj.ErkezesiIdo - bj.IndulasiIdo).TotalMinutes);
+
             }      
             else if (cbJarmu.SelectedItem.ToString()=="Repülő")
             {

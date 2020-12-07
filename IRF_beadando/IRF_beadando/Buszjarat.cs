@@ -11,8 +11,8 @@ namespace IRF_beadando
         public DateTime IndulasiIdo;
         public DateTime ErkezesiIdo;
         public int Idotartam;
-        public Varos IndulasiHely;
-        public Varos ErkezesiHely;
+        public string IndulasiHely;
+        public string ErkezesiHely;
         public int UtHossz;
     }
 }
