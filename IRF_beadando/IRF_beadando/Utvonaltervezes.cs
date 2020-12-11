@@ -16,5 +16,11 @@ namespace IRF_beadando
         {
             InitializeComponent();
         }
+
+        private void btnBetolt_Click(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

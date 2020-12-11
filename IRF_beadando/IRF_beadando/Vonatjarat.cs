@@ -6,13 +6,8 @@ using System.Threading.Tasks;
 
 namespace IRF_beadando
 {
-    public class Vonatjarat
+    [Serializable]
+    public class Vonatjarat : Jarat
     {
-        public DateTime IndulasiIdo;
-        public DateTime ErkezesiIdo;
-        public int Idotartam;
-        public string IndulasiHely;
-        public string ErkezesiHely;
-        public int UtHossz;
     }
 }

@@ -82,6 +82,12 @@
       <DependentUpon>Utvonaltervezes.cs</DependentUpon>
     </Compile>
     <Compile Include="Vonatjarat.cs" />
+    <EmbeddedResource Include="AdatokExportalasa.resx">
+      <DependentUpon>AdatokExportalasa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdatokImportalasa.resx">
+      <DependentUpon>AdatokImportalasa.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -97,6 +103,10 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Utvonaltervezes.resx">
+      <DependentUpon>Utvonaltervezes.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\DataSources\Jarat.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

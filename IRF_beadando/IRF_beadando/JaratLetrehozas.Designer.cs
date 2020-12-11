@@ -41,22 +41,25 @@
             this.cbJarmu = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.tbUthossz = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnMentes
             // 
-            this.btnMentes.Location = new System.Drawing.Point(331, 370);
+            this.btnMentes.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnMentes.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnMentes.Location = new System.Drawing.Point(396, 426);
             this.btnMentes.Name = "btnMentes";
-            this.btnMentes.Size = new System.Drawing.Size(75, 23);
+            this.btnMentes.Size = new System.Drawing.Size(200, 40);
             this.btnMentes.TabIndex = 0;
             this.btnMentes.Text = "Mentés";
-            this.btnMentes.UseVisualStyleBackColor = true;
+            this.btnMentes.UseVisualStyleBackColor = false;
             this.btnMentes.Click += new System.EventHandler(this.btnMentes_Click);
             // 
             // cbKiinduloVaros
             // 
             this.cbKiinduloVaros.FormattingEnabled = true;
-            this.cbKiinduloVaros.Location = new System.Drawing.Point(348, 97);
+            this.cbKiinduloVaros.Location = new System.Drawing.Point(475, 163);
             this.cbKiinduloVaros.Name = "cbKiinduloVaros";
             this.cbKiinduloVaros.Size = new System.Drawing.Size(121, 24);
             this.cbKiinduloVaros.TabIndex = 2;
@@ -64,25 +67,27 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(212, 103);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label1.Location = new System.Drawing.Point(334, 167);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(101, 17);
+            this.label1.Size = new System.Drawing.Size(119, 20);
             this.label1.TabIndex = 3;
             this.label1.Text = "Kiinduló város:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(212, 152);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label2.Location = new System.Drawing.Point(341, 218);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(95, 17);
+            this.label2.Size = new System.Drawing.Size(112, 20);
             this.label2.TabIndex = 4;
             this.label2.Text = "Érkező város:";
             // 
             // cbErkezoVaros
             // 
             this.cbErkezoVaros.FormattingEnabled = true;
-            this.cbErkezoVaros.Location = new System.Drawing.Point(348, 152);
+            this.cbErkezoVaros.Location = new System.Drawing.Point(475, 218);
             this.cbErkezoVaros.Name = "cbErkezoVaros";
             this.cbErkezoVaros.Size = new System.Drawing.Size(121, 24);
             this.cbErkezoVaros.TabIndex = 5;
@@ -90,9 +95,10 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(212, 253);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label3.Location = new System.Drawing.Point(355, 321);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(83, 17);
+            this.label3.Size = new System.Drawing.Size(98, 20);
             this.label3.TabIndex = 6;
             this.label3.Text = "Indulási idő:";
             // 
@@ -100,35 +106,37 @@
             // 
             this.dtpInduasiIdo.CustomFormat = "MM/dd/yyyy hh:mm:ss";
             this.dtpInduasiIdo.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpInduasiIdo.Location = new System.Drawing.Point(348, 253);
+            this.dtpInduasiIdo.Location = new System.Drawing.Point(475, 319);
             this.dtpInduasiIdo.Name = "dtpInduasiIdo";
-            this.dtpInduasiIdo.Size = new System.Drawing.Size(229, 22);
+            this.dtpInduasiIdo.Size = new System.Drawing.Size(223, 22);
             this.dtpInduasiIdo.TabIndex = 7;
             // 
             // dtpErkezesiIdo
             // 
             this.dtpErkezesiIdo.CustomFormat = "MM/dd/yyyy hh:mm:ss";
             this.dtpErkezesiIdo.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpErkezesiIdo.Location = new System.Drawing.Point(348, 304);
+            this.dtpErkezesiIdo.Location = new System.Drawing.Point(475, 370);
             this.dtpErkezesiIdo.Name = "dtpErkezesiIdo";
-            this.dtpErkezesiIdo.Size = new System.Drawing.Size(229, 22);
+            this.dtpErkezesiIdo.Size = new System.Drawing.Size(223, 22);
             this.dtpErkezesiIdo.TabIndex = 8;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(212, 309);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label4.Location = new System.Drawing.Point(347, 372);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(89, 17);
+            this.label4.Size = new System.Drawing.Size(106, 20);
             this.label4.TabIndex = 9;
             this.label4.Text = "Érkezési idő:";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(212, 49);
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label7.Location = new System.Drawing.Point(302, 112);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(127, 17);
+            this.label7.Size = new System.Drawing.Size(151, 20);
             this.label7.TabIndex = 13;
             this.label7.Text = "Közlekedési jármű:";
             // 
@@ -139,7 +147,7 @@
             "Busz",
             "Repülő",
             "Vonat"});
-            this.cbJarmu.Location = new System.Drawing.Point(348, 42);
+            this.cbJarmu.Location = new System.Drawing.Point(475, 108);
             this.cbJarmu.Name = "cbJarmu";
             this.cbJarmu.Size = new System.Drawing.Size(121, 24);
             this.cbJarmu.TabIndex = 12;
@@ -147,24 +155,38 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(212, 205);
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label5.Location = new System.Drawing.Point(338, 271);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(63, 17);
+            this.label5.Size = new System.Drawing.Size(115, 20);
             this.label5.TabIndex = 14;
-            this.label5.Text = "Úthossz:";
+            this.label5.Text = "Úthossz (km):";
             // 
             // tbUthossz
             // 
-            this.tbUthossz.Location = new System.Drawing.Point(348, 205);
+            this.tbUthossz.Location = new System.Drawing.Point(475, 271);
             this.tbUthossz.Name = "tbUthossz";
             this.tbUthossz.Size = new System.Drawing.Size(121, 22);
             this.tbUthossz.TabIndex = 15;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label6.Location = new System.Drawing.Point(134, 42);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(727, 20);
+            this.label6.TabIndex = 16;
+            this.label6.Text = "Új járat létrehozásához kérem adja meg a megfelelő adatokat, majd kattinston a me" +
+    "ntés gombra!";
             // 
             // JaratLetrehozas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(790, 470);
+            this.BackColor = System.Drawing.Color.Gainsboro;
+            this.ClientSize = new System.Drawing.Size(1054, 493);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.tbUthossz);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label7);
@@ -179,7 +201,7 @@
             this.Controls.Add(this.cbKiinduloVaros);
             this.Controls.Add(this.btnMentes);
             this.Name = "JaratLetrehozas";
-            this.Text = "JaratLetrehozas";
+            this.Text = "Új járat létrehozása";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -200,5 +222,6 @@
         private System.Windows.Forms.ComboBox cbJarmu;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox tbUthossz;
+        private System.Windows.Forms.Label label6;
     }
 }

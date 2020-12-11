@@ -38,57 +38,69 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 41);
+            this.label1.BackColor = System.Drawing.Color.Gainsboro;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(79, 43);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(469, 17);
+            this.label1.Size = new System.Drawing.Size(709, 25);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Üdvözöljük az xy alkalmazásban, kérjük válassza ki a kívánt szolgáltatást!";
+            this.label1.Text = "Üdvözöljük a Travelapp alkalmazásban, kérem válassza ki a kívánt szolgáltatást!";
             // 
             // btnLetrehozas
             // 
-            this.btnLetrehozas.Location = new System.Drawing.Point(151, 156);
+            this.btnLetrehozas.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnLetrehozas.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnLetrehozas.Location = new System.Drawing.Point(328, 242);
             this.btnLetrehozas.Name = "btnLetrehozas";
-            this.btnLetrehozas.Size = new System.Drawing.Size(172, 23);
+            this.btnLetrehozas.Size = new System.Drawing.Size(200, 40);
             this.btnLetrehozas.TabIndex = 1;
             this.btnLetrehozas.Text = "Járat léterhozása";
-            this.btnLetrehozas.UseVisualStyleBackColor = true;
+            this.btnLetrehozas.UseVisualStyleBackColor = false;
             this.btnLetrehozas.Click += new System.EventHandler(this.btnLetrehozas_Click);
             // 
             // btnExportalas
             // 
-            this.btnExportalas.Location = new System.Drawing.Point(151, 218);
+            this.btnExportalas.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnExportalas.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnExportalas.Location = new System.Drawing.Point(328, 304);
             this.btnExportalas.Name = "btnExportalas";
-            this.btnExportalas.Size = new System.Drawing.Size(172, 23);
+            this.btnExportalas.Size = new System.Drawing.Size(200, 41);
             this.btnExportalas.TabIndex = 2;
             this.btnExportalas.Text = "Adatok exportálása";
-            this.btnExportalas.UseVisualStyleBackColor = true;
+            this.btnExportalas.UseVisualStyleBackColor = false;
             this.btnExportalas.Click += new System.EventHandler(this.btnExportalas_Click);
             // 
             // btnImportalas
             // 
-            this.btnImportalas.Location = new System.Drawing.Point(151, 94);
+            this.btnImportalas.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnImportalas.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnImportalas.Location = new System.Drawing.Point(328, 180);
             this.btnImportalas.Name = "btnImportalas";
-            this.btnImportalas.Size = new System.Drawing.Size(172, 23);
+            this.btnImportalas.Size = new System.Drawing.Size(200, 40);
             this.btnImportalas.TabIndex = 3;
             this.btnImportalas.Text = "Adatok importálása";
-            this.btnImportalas.UseVisualStyleBackColor = true;
+            this.btnImportalas.UseVisualStyleBackColor = false;
             this.btnImportalas.Click += new System.EventHandler(this.btnImportalas_Click);
             // 
             // btnUtvonal
             // 
-            this.btnUtvonal.Location = new System.Drawing.Point(151, 277);
+            this.btnUtvonal.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnUtvonal.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnUtvonal.Location = new System.Drawing.Point(328, 363);
             this.btnUtvonal.Name = "btnUtvonal";
-            this.btnUtvonal.Size = new System.Drawing.Size(172, 23);
+            this.btnUtvonal.Size = new System.Drawing.Size(200, 41);
             this.btnUtvonal.TabIndex = 4;
             this.btnUtvonal.Text = "Útvonaltervezés";
-            this.btnUtvonal.UseVisualStyleBackColor = true;
+            this.btnUtvonal.UseVisualStyleBackColor = false;
             this.btnUtvonal.Click += new System.EventHandler(this.btnUtvonal_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(489, 350);
+            this.BackColor = System.Drawing.Color.Gainsboro;
+            this.ClientSize = new System.Drawing.Size(870, 465);
             this.Controls.Add(this.btnUtvonal);
             this.Controls.Add(this.btnImportalas);
             this.Controls.Add(this.btnExportalas);
