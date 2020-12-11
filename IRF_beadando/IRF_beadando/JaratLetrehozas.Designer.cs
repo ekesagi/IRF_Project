@@ -104,7 +104,7 @@
             // 
             // dtpInduasiIdo
             // 
-            this.dtpInduasiIdo.CustomFormat = "MM/dd/yyyy hh:mm:ss";
+            this.dtpInduasiIdo.CustomFormat = "MM/dd/yyyy HH:mm:ss";
             this.dtpInduasiIdo.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpInduasiIdo.Location = new System.Drawing.Point(475, 319);
             this.dtpInduasiIdo.Name = "dtpInduasiIdo";
@@ -113,7 +113,7 @@
             // 
             // dtpErkezesiIdo
             // 
-            this.dtpErkezesiIdo.CustomFormat = "MM/dd/yyyy hh:mm:ss";
+            this.dtpErkezesiIdo.CustomFormat = "MM/dd/yyyy HH:mm:ss";
             this.dtpErkezesiIdo.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpErkezesiIdo.Location = new System.Drawing.Point(475, 370);
             this.dtpErkezesiIdo.Name = "dtpErkezesiIdo";

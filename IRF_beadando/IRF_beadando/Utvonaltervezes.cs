@@ -106,9 +106,22 @@ namespace IRF_beadando
                         }
                     }
                 }
+
+                /*Útvonalak kiírása*/
+                tbUtvonalak.Clear();
+                foreach (var utvonal in Utvonalak)
+                {
+                    tbUtvonalak.Text += "OPCIÓ:";
+                    tbUtvonalak.Text += Environment.NewLine;
+
+                    foreach (var jarat in utvonal)
+                    {
+                        tbUtvonalak.Text += jarat.IndulasiHely + " " + jarat.IndulasiIdo + " " + jarat.ErkezesiHely + " " + jarat.ErkezesiIdo;
+                        tbUtvonalak.Text += Environment.NewLine;
+
+                    }
+                }
             }
         }
-        
-
     }
 }

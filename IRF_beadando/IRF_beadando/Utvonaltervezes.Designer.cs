@@ -42,6 +42,7 @@
             this.dtpMikor = new System.Windows.Forms.DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.tbUtvonalak = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -180,12 +181,21 @@
             this.label6.TabIndex = 13;
             this.label6.Text = "A kiválasztott útvonal csv-be történő exportáláshoz kérem nyomja meg a gombot!";
             // 
+            // tbUtvonalak
+            // 
+            this.tbUtvonalak.Location = new System.Drawing.Point(136, 309);
+            this.tbUtvonalak.Multiline = true;
+            this.tbUtvonalak.Name = "tbUtvonalak";
+            this.tbUtvonalak.Size = new System.Drawing.Size(562, 110);
+            this.tbUtvonalak.TabIndex = 14;
+            // 
             // Utvonaltervezes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
             this.ClientSize = new System.Drawing.Size(867, 525);
+            this.Controls.Add(this.tbUtvonalak);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.dtpMikor);
@@ -223,5 +233,6 @@
         private System.Windows.Forms.DateTimePicker dtpMikor;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox tbUtvonalak;
     }
 }
