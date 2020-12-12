@@ -52,12 +52,6 @@
     <Compile Include="AdatokExportalasa.Designer.cs">
       <DependentUpon>AdatokExportalasa.cs</DependentUpon>
     </Compile>
-    <Compile Include="AdatokImportalasa.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AdatokImportalasa.Designer.cs">
-      <DependentUpon>AdatokImportalasa.cs</DependentUpon>
-    </Compile>
     <Compile Include="Buszjarat.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -84,9 +78,6 @@
     <Compile Include="Vonatjarat.cs" />
     <EmbeddedResource Include="AdatokExportalasa.resx">
       <DependentUpon>AdatokExportalasa.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="AdatokImportalasa.resx">
-      <DependentUpon>AdatokImportalasa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

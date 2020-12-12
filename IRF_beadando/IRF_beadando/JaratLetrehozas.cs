@@ -36,6 +36,7 @@ namespace IRF_beadando
                 bj.UtHossz = Convert.ToInt32(tbUthossz.Text);
                 bj.Idotartam = (int)Math.Floor((bj.ErkezesiIdo - bj.IndulasiIdo).TotalMinutes);
                 Form1.Jaratok.Add(bj);
+                MessageBox.Show("Buszjárat hozzáadva. Új járat megadásához, kérem töltse ki újból a formot!");
             }
             else if (cbJarmu.SelectedItem.ToString() == "Repülő")
             {
@@ -47,6 +48,7 @@ namespace IRF_beadando
                 rj.UtHossz = Convert.ToInt32(tbUthossz.Text);
                 rj.Idotartam = (int)Math.Floor((rj.ErkezesiIdo - rj.IndulasiIdo).TotalMinutes);
                 Form1.Jaratok.Add(rj);
+                MessageBox.Show("Repülőjárat hozzáadva. Új járat megadásához, kérem töltse ki újból a formot!");
             }
             else
             {
@@ -58,6 +60,7 @@ namespace IRF_beadando
                 vj.UtHossz = Convert.ToInt32(tbUthossz.Text);
                 vj.Idotartam = (int)Math.Floor((vj.ErkezesiIdo - vj.IndulasiIdo).TotalMinutes);
                 Form1.Jaratok.Add(vj);
+                MessageBox.Show("Vonatjárat hozzáadva. Új járat megadásához, kérem töltse ki újból a formot!");
             }
 
 

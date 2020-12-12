@@ -18,8 +18,7 @@ namespace IRF_beadando
         public AdatokExportalasa()
         {
             InitializeComponent();
-            jaratBindingSource.DataSource = Form1.Jaratok;
-            dtgAdatokkiirasa.DataSource = jaratBindingSource;
+            dtgAdatokkiirasa.DataSource = Form1.Jaratok;
             dtgAdatokkiirasa.Refresh();
         }
 
@@ -40,6 +39,11 @@ namespace IRF_beadando
                     writer.Flush();
                 }
             }
+        }
+
+        private void btnTorles_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
