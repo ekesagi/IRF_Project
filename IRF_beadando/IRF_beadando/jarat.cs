@@ -19,5 +19,6 @@ namespace IRF_beadando
         public string IndulasiHely { get; set; }
         public string ErkezesiHely { get; set; }
         public int UtHossz { get; set; }
+        public string MiVagyokEn { get; set; }
     }
 }

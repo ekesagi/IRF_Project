@@ -32,10 +32,6 @@
             this.cbHonnan = new System.Windows.Forms.ComboBox();
             this.cbHova = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.cbVonat = new System.Windows.Forms.CheckBox();
-            this.cbRepulo = new System.Windows.Forms.CheckBox();
-            this.cbBusz = new System.Windows.Forms.CheckBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.btnBetolt = new System.Windows.Forms.Button();
             this.btnKivalaszt = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
@@ -43,6 +39,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.tbUtvonalak = new System.Windows.Forms.TextBox();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.SuspendLayout();
             // 
             // label1
@@ -81,53 +78,13 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Érkezési város:";
             // 
-            // cbVonat
-            // 
-            this.cbVonat.AutoSize = true;
-            this.cbVonat.Location = new System.Drawing.Point(535, 159);
-            this.cbVonat.Name = "cbVonat";
-            this.cbVonat.Size = new System.Drawing.Size(67, 21);
-            this.cbVonat.TabIndex = 4;
-            this.cbVonat.Text = "Vonat";
-            this.cbVonat.UseVisualStyleBackColor = true;
-            // 
-            // cbRepulo
-            // 
-            this.cbRepulo.AutoSize = true;
-            this.cbRepulo.Location = new System.Drawing.Point(454, 159);
-            this.cbRepulo.Name = "cbRepulo";
-            this.cbRepulo.Size = new System.Drawing.Size(75, 21);
-            this.cbRepulo.TabIndex = 5;
-            this.cbRepulo.Text = "Repülő";
-            this.cbRepulo.UseVisualStyleBackColor = true;
-            // 
-            // cbBusz
-            // 
-            this.cbBusz.AutoSize = true;
-            this.cbBusz.Location = new System.Drawing.Point(387, 159);
-            this.cbBusz.Name = "cbBusz";
-            this.cbBusz.Size = new System.Drawing.Size(61, 21);
-            this.cbBusz.TabIndex = 6;
-            this.cbBusz.Text = "Busz";
-            this.cbBusz.UseVisualStyleBackColor = true;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label3.Location = new System.Drawing.Point(170, 157);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(188, 20);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "Közlekedési jármű(vek):";
-            // 
             // btnBetolt
             // 
             this.btnBetolt.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.btnBetolt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btnBetolt.Location = new System.Drawing.Point(305, 263);
+            this.btnBetolt.Location = new System.Drawing.Point(139, 210);
             this.btnBetolt.Name = "btnBetolt";
-            this.btnBetolt.Size = new System.Drawing.Size(200, 40);
+            this.btnBetolt.Size = new System.Drawing.Size(559, 40);
             this.btnBetolt.TabIndex = 8;
             this.btnBetolt.Text = "Útvonalak keresése";
             this.btnBetolt.UseVisualStyleBackColor = false;
@@ -137,18 +94,19 @@
             // 
             this.btnKivalaszt.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.btnKivalaszt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btnKivalaszt.Location = new System.Drawing.Point(305, 473);
+            this.btnKivalaszt.Location = new System.Drawing.Point(139, 420);
             this.btnKivalaszt.Name = "btnKivalaszt";
-            this.btnKivalaszt.Size = new System.Drawing.Size(200, 40);
+            this.btnKivalaszt.Size = new System.Drawing.Size(559, 40);
             this.btnKivalaszt.TabIndex = 9;
-            this.btnKivalaszt.Text = "Útvonal exportálása";
+            this.btnKivalaszt.Text = "Útvonalak exportálása";
             this.btnKivalaszt.UseVisualStyleBackColor = false;
+            this.btnKivalaszt.Click += new System.EventHandler(this.btnKivalaszt_Click);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label4.Location = new System.Drawing.Point(219, 212);
+            this.label4.Location = new System.Drawing.Point(219, 159);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(139, 20);
             this.label4.TabIndex = 10;
@@ -156,7 +114,7 @@
             // 
             // dtpMikor
             // 
-            this.dtpMikor.Location = new System.Drawing.Point(387, 210);
+            this.dtpMikor.Location = new System.Drawing.Point(387, 157);
             this.dtpMikor.Name = "dtpMikor";
             this.dtpMikor.Size = new System.Drawing.Size(215, 22);
             this.dtpMikor.TabIndex = 11;
@@ -175,18 +133,18 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label6.Location = new System.Drawing.Point(85, 433);
+            this.label6.Location = new System.Drawing.Point(135, 385);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(613, 20);
+            this.label6.Size = new System.Drawing.Size(563, 20);
             this.label6.TabIndex = 13;
-            this.label6.Text = "A kiválasztott útvonal csv-be történő exportáláshoz kérem nyomja meg a gombot!";
+            this.label6.Text = "Az útvonalak csv-be történő exportálásához, kérem nyomja meg a gombot!";
             // 
             // tbUtvonalak
             // 
-            this.tbUtvonalak.Location = new System.Drawing.Point(136, 309);
+            this.tbUtvonalak.Location = new System.Drawing.Point(12, 256);
             this.tbUtvonalak.Multiline = true;
             this.tbUtvonalak.Name = "tbUtvonalak";
-            this.tbUtvonalak.Size = new System.Drawing.Size(562, 110);
+            this.tbUtvonalak.Size = new System.Drawing.Size(843, 110);
             this.tbUtvonalak.TabIndex = 14;
             // 
             // Utvonaltervezes
@@ -202,10 +160,6 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btnKivalaszt);
             this.Controls.Add(this.btnBetolt);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.cbBusz);
-            this.Controls.Add(this.cbRepulo);
-            this.Controls.Add(this.cbVonat);
             this.Controls.Add(this.cbHova);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.cbHonnan);
@@ -223,10 +177,6 @@
         private System.Windows.Forms.ComboBox cbHonnan;
         private System.Windows.Forms.ComboBox cbHova;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.CheckBox cbVonat;
-        private System.Windows.Forms.CheckBox cbRepulo;
-        private System.Windows.Forms.CheckBox cbBusz;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnBetolt;
         private System.Windows.Forms.Button btnKivalaszt;
         private System.Windows.Forms.Label label4;
@@ -234,5 +184,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox tbUtvonalak;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
     }
 }

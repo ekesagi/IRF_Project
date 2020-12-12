@@ -40,10 +40,5 @@ namespace IRF_beadando
                 }
             }
         }
-
-        private void btnTorles_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

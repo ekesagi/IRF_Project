@@ -33,7 +33,6 @@
             this.dtgAdatokkiirasa = new System.Windows.Forms.DataGridView();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnTorles = new System.Windows.Forms.Button();
             this.jaratBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dtgAdatokkiirasa)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.jaratBindingSource)).BeginInit();
@@ -43,7 +42,7 @@
             // 
             this.btnExportalas.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.btnExportalas.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btnExportalas.Location = new System.Drawing.Point(311, 546);
+            this.btnExportalas.Location = new System.Drawing.Point(420, 549);
             this.btnExportalas.Name = "btnExportalas";
             this.btnExportalas.Size = new System.Drawing.Size(200, 40);
             this.btnExportalas.TabIndex = 0;
@@ -71,18 +70,6 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Az adatok exportálásához, kérem kattintson az exportálás gombra!";
             // 
-            // btnTorles
-            // 
-            this.btnTorles.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnTorles.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btnTorles.Location = new System.Drawing.Point(549, 546);
-            this.btnTorles.Name = "btnTorles";
-            this.btnTorles.Size = new System.Drawing.Size(200, 40);
-            this.btnTorles.TabIndex = 3;
-            this.btnTorles.Text = "Járat törlése";
-            this.btnTorles.UseVisualStyleBackColor = false;
-            this.btnTorles.Click += new System.EventHandler(this.btnTorles_Click);
-            // 
             // jaratBindingSource
             // 
             this.jaratBindingSource.DataSource = typeof(IRF_beadando.Jarat);
@@ -93,7 +80,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
             this.ClientSize = new System.Drawing.Size(1064, 620);
-            this.Controls.Add(this.btnTorles);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dtgAdatokkiirasa);
             this.Controls.Add(this.btnExportalas);
@@ -114,6 +100,5 @@
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
         private System.Windows.Forms.BindingSource jaratBindingSource;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnTorles;
     }
 }

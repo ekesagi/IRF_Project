@@ -9,6 +9,14 @@ namespace IRF_beadando
     [Serializable]
     public class Vonatjarat : Jarat
     {
-         public string Tipus { get; set; }
-}
+        public string Tipus { get; set; }
+        public Vonatjarat()
+        {
+            this.MiVagyokEn = "Vonat";
+        }
+        public override string ToString()
+        {
+            return "VONAT: " + IndulasiHely + " " + IndulasiIdo + " " + ErkezesiHely + " " + ErkezesiIdo + " " + Idotartam + " perc " + UtHossz + " km , Vonat típusa:" + Tipus;
+        }
+    }
 }

@@ -10,5 +10,13 @@ namespace IRF_beadando
     public class Buszjarat : Jarat
     {
         public bool AutoPalyanMegyE { get; set; }
+        public Buszjarat()
+        {
+            this.MiVagyokEn = "Busz";
+        }
+        public override string ToString()
+        {
+            return "BUSZ: " + IndulasiHely + " " + IndulasiIdo + " " + ErkezesiHely + " " + ErkezesiIdo + " " + Idotartam + " perc " + UtHossz + " km , Autópályán megy:" + AutoPalyanMegyE;
+        }
     }
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,6 +13,8 @@ namespace IRF_beadando
 {
     public partial class Utvonaltervezes : Form
     {
+        List<List<Jarat>> Utvonalak = new List<List<Jarat>>();
+
         public List<Jarat> JaratokAdottVarosbol(string varos, DateTime mikortol)
         {
             List<Jarat> Eredmenyek = new List<Jarat>();
@@ -46,11 +49,7 @@ namespace IRF_beadando
                 string indulovaros = cbHonnan.SelectedItem.ToString();
                 string erkezovaros = cbHova.SelectedItem.ToString();
 
-                List<List<Jarat>> Utvonalak = new List<List<Jarat>>();
-                List<Jarat> Indulojaratok = new List<Jarat>();
-                List<string> Ahovaeljutunk = new List<string>();
-
-                Indulojaratok = JaratokAdottVarosbol(indulovaros, dtpMikor.Value.Date);
+                List<Jarat> Indulojaratok = JaratokAdottVarosbol(indulovaros, dtpMikor.Value.Date);
 
                 foreach (var jarat1 in Indulojaratok)
                 {
@@ -116,12 +115,41 @@ namespace IRF_beadando
 
                     foreach (var jarat in utvonal)
                     {
-                        tbUtvonalak.Text += jarat.IndulasiHely + " " + jarat.IndulasiIdo + " " + jarat.ErkezesiHely + " " + jarat.ErkezesiIdo;
+                        tbUtvonalak.Text += jarat.ToString();
                         tbUtvonalak.Text += Environment.NewLine;
                     }
                     tbUtvonalak.Text += Environment.NewLine;
                 }
             }
+        }
+
+        private void btnKivalaszt_Click(object sender, EventArgs e)
+        {
+            if (saveFileDialog1.ShowDialog()==DialogResult.OK)
+            {
+                StreamWriter sw = new StreamWriter(new FileStream(saveFileDialog1.FileName,FileMode.CreateNew) ,Encoding.UTF8) ;
+                sw.WriteLine("Opció sorszáma;Közlekedési eszköz;Indulási hely; Indulási idő;Érkezési hely;Érkezési idő;Időtartam(perc);Úthossz(km);Vonat típus;Kapunk-e ebédet;Autópályán megy-e;");
+                for (int i = 0; i < Utvonalak.Count; i++)
+                {
+                    foreach (var Jarat in Utvonalak[i])
+                    {
+                        if (Jarat is Buszjarat)
+                        {
+                            sw.WriteLine(i.ToString() + ";" + Jarat.MiVagyokEn + ";" + Jarat.IndulasiHely + ";"+Jarat.IndulasiIdo+";"+Jarat.ErkezesiHely + ";" +Jarat.ErkezesiIdo + ";" +Jarat.Idotartam + ";" +Jarat.UtHossz + ";;;" +((Buszjarat)Jarat).AutoPalyanMegyE+";");
+                        }
+                        else if (Jarat is Vonatjarat)
+                        {
+                            sw.WriteLine(i.ToString() + ";" + Jarat.MiVagyokEn + ";" + Jarat.IndulasiHely + ";" + Jarat.IndulasiIdo + ";" + Jarat.ErkezesiHely + ";" + Jarat.ErkezesiIdo + ";" + Jarat.Idotartam + ";" + Jarat.UtHossz + ";" + ((Vonatjarat)Jarat).Tipus+";;;");
+                        }
+                        else
+                        {
+                            sw.WriteLine(i.ToString() + ";" + Jarat.MiVagyokEn + ";" + Jarat.IndulasiHely + ";" + Jarat.IndulasiIdo + ";" + Jarat.ErkezesiHely + ";" + Jarat.ErkezesiIdo + ";" + Jarat.Idotartam + ";" + Jarat.UtHossz + ";;" + ((Repulojarat)Jarat).KapunkEEbedet+";;");
+                        }
+                    }
+                }
+                sw.Close();
+            }
+
         }
     }
 }
