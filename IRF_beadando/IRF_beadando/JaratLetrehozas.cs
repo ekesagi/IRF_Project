@@ -35,6 +35,7 @@ namespace IRF_beadando
                 bj.IndulasiHely = cbKiinduloVaros.SelectedItem.ToString();
                 bj.UtHossz = Convert.ToInt32(tbUthossz.Text);
                 bj.Idotartam = (int)Math.Floor((bj.ErkezesiIdo - bj.IndulasiIdo).TotalMinutes);
+                bj.AutoPalyanMegyE = cbAutoPalyanMegyE.Checked;
                 Form1.Jaratok.Add(bj);
                 MessageBox.Show("Buszjárat hozzáadva. Új járat megadásához, kérem töltse ki újból a formot!");
             }
@@ -47,6 +48,7 @@ namespace IRF_beadando
                 rj.IndulasiHely = cbKiinduloVaros.SelectedItem.ToString();
                 rj.UtHossz = Convert.ToInt32(tbUthossz.Text);
                 rj.Idotartam = (int)Math.Floor((rj.ErkezesiIdo - rj.IndulasiIdo).TotalMinutes);
+                rj.KapunkEEbedet = cbKapunkEEbedet.Checked;
                 Form1.Jaratok.Add(rj);
                 MessageBox.Show("Repülőjárat hozzáadva. Új járat megadásához, kérem töltse ki újból a formot!");
             }
@@ -59,11 +61,35 @@ namespace IRF_beadando
                 vj.IndulasiHely = cbKiinduloVaros.SelectedItem.ToString();
                 vj.UtHossz = Convert.ToInt32(tbUthossz.Text);
                 vj.Idotartam = (int)Math.Floor((vj.ErkezesiIdo - vj.IndulasiIdo).TotalMinutes);
+                vj.Tipus = cbVonatTipusa.SelectedItem.ToString();
                 Form1.Jaratok.Add(vj);
                 MessageBox.Show("Vonatjárat hozzáadva. Új járat megadásához, kérem töltse ki újból a formot!");
             }
+        }
 
-
+        private void cbJarmu_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cbJarmu.SelectedItem.ToString() == "Busz")
+            {
+                lblVonatTipusa.Visible = false;
+                cbVonatTipusa.Visible = false;
+                cbKapunkEEbedet.Visible = false;
+                cbAutoPalyanMegyE.Visible = true;
+            }
+            else if (cbJarmu.SelectedItem.ToString() == "Repülő")
+            {
+                lblVonatTipusa.Visible = false;
+                cbVonatTipusa.Visible = false;
+                cbKapunkEEbedet.Visible = true;
+                cbAutoPalyanMegyE.Visible = false;
+            }
+            else
+            {
+                lblVonatTipusa.Visible = true;
+                cbVonatTipusa.Visible = true;
+                cbKapunkEEbedet.Visible = false;
+                cbAutoPalyanMegyE.Visible = false;
+            }
         }
     }
 }

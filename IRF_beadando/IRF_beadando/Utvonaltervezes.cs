@@ -118,8 +118,8 @@ namespace IRF_beadando
                     {
                         tbUtvonalak.Text += jarat.IndulasiHely + " " + jarat.IndulasiIdo + " " + jarat.ErkezesiHely + " " + jarat.ErkezesiIdo;
                         tbUtvonalak.Text += Environment.NewLine;
-
                     }
+                    tbUtvonalak.Text += Environment.NewLine;
                 }
             }
         }

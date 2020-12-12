@@ -9,5 +9,6 @@ namespace IRF_beadando
     [Serializable]
     public class Buszjarat : Jarat
     {
+        public bool AutoPalyanMegyE { get; set; }
     }
 }

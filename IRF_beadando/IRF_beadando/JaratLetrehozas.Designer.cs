@@ -42,6 +42,10 @@
             this.label5 = new System.Windows.Forms.Label();
             this.tbUthossz = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.lblVonatTipusa = new System.Windows.Forms.Label();
+            this.cbVonatTipusa = new System.Windows.Forms.ComboBox();
+            this.cbKapunkEEbedet = new System.Windows.Forms.CheckBox();
+            this.cbAutoPalyanMegyE = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // btnMentes
@@ -151,6 +155,7 @@
             this.cbJarmu.Name = "cbJarmu";
             this.cbJarmu.Size = new System.Drawing.Size(121, 24);
             this.cbJarmu.TabIndex = 12;
+            this.cbJarmu.SelectedIndexChanged += new System.EventHandler(this.cbJarmu_SelectedIndexChanged);
             // 
             // label5
             // 
@@ -180,12 +185,61 @@
             this.label6.Text = "Új járat létrehozásához kérem adja meg a megfelelő adatokat, majd kattinston a me" +
     "ntés gombra!";
             // 
+            // lblVonatTipusa
+            // 
+            this.lblVonatTipusa.AutoSize = true;
+            this.lblVonatTipusa.Location = new System.Drawing.Point(713, 108);
+            this.lblVonatTipusa.Name = "lblVonatTipusa";
+            this.lblVonatTipusa.Size = new System.Drawing.Size(87, 17);
+            this.lblVonatTipusa.TabIndex = 17;
+            this.lblVonatTipusa.Text = "Vonat típusa";
+            this.lblVonatTipusa.Visible = false;
+            // 
+            // cbVonatTipusa
+            // 
+            this.cbVonatTipusa.FormattingEnabled = true;
+            this.cbVonatTipusa.Items.AddRange(new object[] {
+            "InterCity",
+            "Gyorsvonat",
+            "Személyvonat"});
+            this.cbVonatTipusa.Location = new System.Drawing.Point(806, 105);
+            this.cbVonatTipusa.Name = "cbVonatTipusa";
+            this.cbVonatTipusa.Size = new System.Drawing.Size(121, 24);
+            this.cbVonatTipusa.TabIndex = 18;
+            this.cbVonatTipusa.Visible = false;
+            // 
+            // cbKapunkEEbedet
+            // 
+            this.cbKapunkEEbedet.AutoSize = true;
+            this.cbKapunkEEbedet.Location = new System.Drawing.Point(806, 147);
+            this.cbKapunkEEbedet.Name = "cbKapunkEEbedet";
+            this.cbKapunkEEbedet.Size = new System.Drawing.Size(62, 21);
+            this.cbKapunkEEbedet.TabIndex = 19;
+            this.cbKapunkEEbedet.Text = "ebéd";
+            this.cbKapunkEEbedet.UseVisualStyleBackColor = true;
+            this.cbKapunkEEbedet.Visible = false;
+            // 
+            // cbAutoPalyanMegyE
+            // 
+            this.cbAutoPalyanMegyE.AutoSize = true;
+            this.cbAutoPalyanMegyE.Location = new System.Drawing.Point(806, 185);
+            this.cbAutoPalyanMegyE.Name = "cbAutoPalyanMegyE";
+            this.cbAutoPalyanMegyE.Size = new System.Drawing.Size(92, 21);
+            this.cbAutoPalyanMegyE.TabIndex = 20;
+            this.cbAutoPalyanMegyE.Text = "autopálya";
+            this.cbAutoPalyanMegyE.UseVisualStyleBackColor = true;
+            this.cbAutoPalyanMegyE.Visible = false;
+            // 
             // JaratLetrehozas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
             this.ClientSize = new System.Drawing.Size(1054, 493);
+            this.Controls.Add(this.cbAutoPalyanMegyE);
+            this.Controls.Add(this.cbKapunkEEbedet);
+            this.Controls.Add(this.cbVonatTipusa);
+            this.Controls.Add(this.lblVonatTipusa);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.tbUthossz);
             this.Controls.Add(this.label5);
@@ -223,5 +277,9 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox tbUthossz;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lblVonatTipusa;
+        private System.Windows.Forms.ComboBox cbVonatTipusa;
+        private System.Windows.Forms.CheckBox cbKapunkEEbedet;
+        private System.Windows.Forms.CheckBox cbAutoPalyanMegyE;
     }
 }

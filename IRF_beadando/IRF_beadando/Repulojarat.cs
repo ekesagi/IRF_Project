@@ -9,5 +9,6 @@ namespace IRF_beadando
     [Serializable]
     public class Repulojarat : Jarat
     {
+        public bool KapunkEEbedet { get; set; }
     }
 }

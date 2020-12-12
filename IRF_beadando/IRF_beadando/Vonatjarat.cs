@@ -9,5 +9,6 @@ namespace IRF_beadando
     [Serializable]
     public class Vonatjarat : Jarat
     {
-    }
+         public string Tipus { get; set; }
+}
 }
