@@ -40,11 +40,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Gainsboro;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(79, 43);
+            this.label1.Location = new System.Drawing.Point(61, 77);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(709, 25);
+            this.label1.Size = new System.Drawing.Size(790, 26);
             this.label1.TabIndex = 0;
             this.label1.Text = "Üdvözöljük a Travelapp alkalmazásban, kérem válassza ki a kívánt szolgáltatást!";
             // 
@@ -52,7 +52,7 @@
             // 
             this.btnLetrehozas.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.btnLetrehozas.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btnLetrehozas.Location = new System.Drawing.Point(159, 241);
+            this.btnLetrehozas.Location = new System.Drawing.Point(230, 229);
             this.btnLetrehozas.Name = "btnLetrehozas";
             this.btnLetrehozas.Size = new System.Drawing.Size(528, 40);
             this.btnLetrehozas.TabIndex = 1;
@@ -64,7 +64,7 @@
             // 
             this.btnExportalas.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.btnExportalas.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btnExportalas.Location = new System.Drawing.Point(159, 303);
+            this.btnExportalas.Location = new System.Drawing.Point(230, 285);
             this.btnExportalas.Name = "btnExportalas";
             this.btnExportalas.Size = new System.Drawing.Size(528, 41);
             this.btnExportalas.TabIndex = 2;
@@ -76,7 +76,7 @@
             // 
             this.btnImportalas.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.btnImportalas.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btnImportalas.Location = new System.Drawing.Point(159, 179);
+            this.btnImportalas.Location = new System.Drawing.Point(230, 170);
             this.btnImportalas.Name = "btnImportalas";
             this.btnImportalas.Size = new System.Drawing.Size(528, 40);
             this.btnImportalas.TabIndex = 3;
@@ -88,7 +88,7 @@
             // 
             this.btnUtvonal.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.btnUtvonal.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btnUtvonal.Location = new System.Drawing.Point(159, 362);
+            this.btnUtvonal.Location = new System.Drawing.Point(230, 345);
             this.btnUtvonal.Name = "btnUtvonal";
             this.btnUtvonal.Size = new System.Drawing.Size(528, 41);
             this.btnUtvonal.TabIndex = 4;
@@ -105,14 +105,14 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
-            this.ClientSize = new System.Drawing.Size(870, 465);
+            this.ClientSize = new System.Drawing.Size(982, 473);
             this.Controls.Add(this.btnUtvonal);
             this.Controls.Add(this.btnImportalas);
             this.Controls.Add(this.btnExportalas);
             this.Controls.Add(this.btnLetrehozas);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Kezdőlap";
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form1_Paint);
             this.ResumeLayout(false);
             this.PerformLayout();

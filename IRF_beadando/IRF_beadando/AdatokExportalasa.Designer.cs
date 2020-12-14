@@ -42,7 +42,7 @@
             // 
             this.btnExportalas.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.btnExportalas.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btnExportalas.Location = new System.Drawing.Point(420, 549);
+            this.btnExportalas.Location = new System.Drawing.Point(396, 550);
             this.btnExportalas.Name = "btnExportalas";
             this.btnExportalas.Size = new System.Drawing.Size(200, 40);
             this.btnExportalas.TabIndex = 0;
@@ -63,10 +63,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label1.Location = new System.Drawing.Point(288, 508);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label1.Location = new System.Drawing.Point(172, 505);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(504, 20);
+            this.label1.Size = new System.Drawing.Size(655, 26);
             this.label1.TabIndex = 2;
             this.label1.Text = "Az adatok exportálásához, kérem kattintson az exportálás gombra!";
             // 
@@ -79,7 +79,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
-            this.ClientSize = new System.Drawing.Size(1064, 620);
+            this.ClientSize = new System.Drawing.Size(1062, 613);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dtgAdatokkiirasa);
             this.Controls.Add(this.btnExportalas);

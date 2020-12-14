@@ -52,7 +52,7 @@
             // 
             this.btnMentes.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.btnMentes.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btnMentes.Location = new System.Drawing.Point(396, 426);
+            this.btnMentes.Location = new System.Drawing.Point(420, 528);
             this.btnMentes.Name = "btnMentes";
             this.btnMentes.Size = new System.Drawing.Size(200, 40);
             this.btnMentes.TabIndex = 0;
@@ -63,7 +63,7 @@
             // cbKiinduloVaros
             // 
             this.cbKiinduloVaros.FormattingEnabled = true;
-            this.cbKiinduloVaros.Location = new System.Drawing.Point(475, 163);
+            this.cbKiinduloVaros.Location = new System.Drawing.Point(475, 206);
             this.cbKiinduloVaros.Name = "cbKiinduloVaros";
             this.cbKiinduloVaros.Size = new System.Drawing.Size(121, 24);
             this.cbKiinduloVaros.TabIndex = 2;
@@ -72,7 +72,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label1.Location = new System.Drawing.Point(334, 167);
+            this.label1.Location = new System.Drawing.Point(334, 210);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(119, 20);
             this.label1.TabIndex = 3;
@@ -82,7 +82,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label2.Location = new System.Drawing.Point(341, 218);
+            this.label2.Location = new System.Drawing.Point(341, 274);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(112, 20);
             this.label2.TabIndex = 4;
@@ -91,7 +91,7 @@
             // cbErkezoVaros
             // 
             this.cbErkezoVaros.FormattingEnabled = true;
-            this.cbErkezoVaros.Location = new System.Drawing.Point(475, 218);
+            this.cbErkezoVaros.Location = new System.Drawing.Point(475, 274);
             this.cbErkezoVaros.Name = "cbErkezoVaros";
             this.cbErkezoVaros.Size = new System.Drawing.Size(121, 24);
             this.cbErkezoVaros.TabIndex = 5;
@@ -100,7 +100,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label3.Location = new System.Drawing.Point(355, 321);
+            this.label3.Location = new System.Drawing.Point(355, 398);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(98, 20);
             this.label3.TabIndex = 6;
@@ -110,7 +110,7 @@
             // 
             this.dtpInduasiIdo.CustomFormat = "MM/dd/yyyy HH:mm:ss";
             this.dtpInduasiIdo.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpInduasiIdo.Location = new System.Drawing.Point(475, 319);
+            this.dtpInduasiIdo.Location = new System.Drawing.Point(475, 396);
             this.dtpInduasiIdo.Name = "dtpInduasiIdo";
             this.dtpInduasiIdo.Size = new System.Drawing.Size(223, 22);
             this.dtpInduasiIdo.TabIndex = 7;
@@ -119,7 +119,7 @@
             // 
             this.dtpErkezesiIdo.CustomFormat = "MM/dd/yyyy HH:mm:ss";
             this.dtpErkezesiIdo.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpErkezesiIdo.Location = new System.Drawing.Point(475, 370);
+            this.dtpErkezesiIdo.Location = new System.Drawing.Point(475, 461);
             this.dtpErkezesiIdo.Name = "dtpErkezesiIdo";
             this.dtpErkezesiIdo.Size = new System.Drawing.Size(223, 22);
             this.dtpErkezesiIdo.TabIndex = 8;
@@ -128,7 +128,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label4.Location = new System.Drawing.Point(347, 372);
+            this.label4.Location = new System.Drawing.Point(347, 463);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(106, 20);
             this.label4.TabIndex = 9;
@@ -138,7 +138,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label7.Location = new System.Drawing.Point(302, 112);
+            this.label7.Location = new System.Drawing.Point(302, 145);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(151, 20);
             this.label7.TabIndex = 13;
@@ -151,7 +151,7 @@
             "Busz",
             "Repülő",
             "Vonat"});
-            this.cbJarmu.Location = new System.Drawing.Point(475, 108);
+            this.cbJarmu.Location = new System.Drawing.Point(475, 141);
             this.cbJarmu.Name = "cbJarmu";
             this.cbJarmu.Size = new System.Drawing.Size(121, 24);
             this.cbJarmu.TabIndex = 12;
@@ -161,7 +161,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label5.Location = new System.Drawing.Point(338, 271);
+            this.label5.Location = new System.Drawing.Point(338, 336);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(115, 20);
             this.label5.TabIndex = 14;
@@ -169,7 +169,7 @@
             // 
             // tbUthossz
             // 
-            this.tbUthossz.Location = new System.Drawing.Point(475, 271);
+            this.tbUthossz.Location = new System.Drawing.Point(475, 336);
             this.tbUthossz.Name = "tbUthossz";
             this.tbUthossz.Size = new System.Drawing.Size(121, 22);
             this.tbUthossz.TabIndex = 15;
@@ -177,10 +177,10 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label6.Location = new System.Drawing.Point(134, 42);
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label6.Location = new System.Drawing.Point(22, 52);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(727, 20);
+            this.label6.Size = new System.Drawing.Size(946, 26);
             this.label6.TabIndex = 16;
             this.label6.Text = "Új járat létrehozásához kérem adja meg a megfelelő adatokat, majd kattinston a me" +
     "ntés gombra!";
@@ -188,7 +188,7 @@
             // lblVonatTipusa
             // 
             this.lblVonatTipusa.AutoSize = true;
-            this.lblVonatTipusa.Location = new System.Drawing.Point(713, 108);
+            this.lblVonatTipusa.Location = new System.Drawing.Point(714, 141);
             this.lblVonatTipusa.Name = "lblVonatTipusa";
             this.lblVonatTipusa.Size = new System.Drawing.Size(87, 17);
             this.lblVonatTipusa.TabIndex = 17;
@@ -202,7 +202,7 @@
             "InterCity",
             "Gyorsvonat",
             "Személyvonat"});
-            this.cbVonatTipusa.Location = new System.Drawing.Point(806, 105);
+            this.cbVonatTipusa.Location = new System.Drawing.Point(807, 138);
             this.cbVonatTipusa.Name = "cbVonatTipusa";
             this.cbVonatTipusa.Size = new System.Drawing.Size(121, 24);
             this.cbVonatTipusa.TabIndex = 18;
@@ -211,22 +211,22 @@
             // cbKapunkEEbedet
             // 
             this.cbKapunkEEbedet.AutoSize = true;
-            this.cbKapunkEEbedet.Location = new System.Drawing.Point(806, 147);
+            this.cbKapunkEEbedet.Location = new System.Drawing.Point(717, 168);
             this.cbKapunkEEbedet.Name = "cbKapunkEEbedet";
-            this.cbKapunkEEbedet.Size = new System.Drawing.Size(62, 21);
+            this.cbKapunkEEbedet.Size = new System.Drawing.Size(224, 21);
             this.cbKapunkEEbedet.TabIndex = 19;
-            this.cbKapunkEEbedet.Text = "ebéd";
+            this.cbKapunkEEbedet.Text = "Kap-e ebédet a repülőjáraton?";
             this.cbKapunkEEbedet.UseVisualStyleBackColor = true;
             this.cbKapunkEEbedet.Visible = false;
             // 
             // cbAutoPalyanMegyE
             // 
             this.cbAutoPalyanMegyE.AutoSize = true;
-            this.cbAutoPalyanMegyE.Location = new System.Drawing.Point(806, 185);
+            this.cbAutoPalyanMegyE.Location = new System.Drawing.Point(717, 195);
             this.cbAutoPalyanMegyE.Name = "cbAutoPalyanMegyE";
-            this.cbAutoPalyanMegyE.Size = new System.Drawing.Size(92, 21);
+            this.cbAutoPalyanMegyE.Size = new System.Drawing.Size(235, 21);
             this.cbAutoPalyanMegyE.TabIndex = 20;
-            this.cbAutoPalyanMegyE.Text = "autopálya";
+            this.cbAutoPalyanMegyE.Text = "Autópályán halad-e a buszjárat?";
             this.cbAutoPalyanMegyE.UseVisualStyleBackColor = true;
             this.cbAutoPalyanMegyE.Visible = false;
             // 
@@ -235,7 +235,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
-            this.ClientSize = new System.Drawing.Size(1054, 493);
+            this.ClientSize = new System.Drawing.Size(1062, 613);
             this.Controls.Add(this.cbAutoPalyanMegyE);
             this.Controls.Add(this.cbKapunkEEbedet);
             this.Controls.Add(this.cbVonatTipusa);

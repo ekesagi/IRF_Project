@@ -148,6 +148,7 @@ namespace IRF_beadando
                     }
                 }
                 sw.Close();
+                MessageBox.Show("Útvonalak sikeresen exportálva.");
             }
 
         }

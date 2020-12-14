@@ -38,7 +38,9 @@ namespace IRF_beadando
                     serializer.Serialize(writer, Form1.Jaratok);
                     writer.Flush();
                 }
+                MessageBox.Show("Adatok sikeresen exportálva.");
             }
+            
         }
     }
 }

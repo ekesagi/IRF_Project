@@ -13,8 +13,38 @@ namespace IRF_beadando
     [XmlInclude(typeof(Buszjarat))]
     public abstract class Jarat
     {
-        public DateTime IndulasiIdo { get; set; }
-        public DateTime ErkezesiIdo { get; set; }
+        private DateTime _indulasiido;
+        public DateTime IndulasiIdo 
+        { 
+            get 
+            { 
+                return _indulasiido;
+            } 
+            set 
+            {
+                _indulasiido = value;
+                if (_erkezesiido!=null)
+                {
+                    Idotartam = (int)Math.Floor((_erkezesiido - _indulasiido).TotalMinutes);
+                }
+            } 
+        }
+        private DateTime _erkezesiido;
+        public DateTime ErkezesiIdo 
+        { 
+            get 
+            {
+                return _erkezesiido;
+            } 
+            set 
+            {
+                _erkezesiido = value;
+                if (_indulasiido!=null)
+                {
+                    Idotartam= (int)Math.Floor((_erkezesiido - _indulasiido).TotalMinutes);
+                }
+            } 
+        }
         public int Idotartam { get; set; }
         public string IndulasiHely { get; set; }
         public string ErkezesiHely { get; set; }
