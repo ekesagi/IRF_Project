@@ -66,10 +66,10 @@ namespace IRF_beadando
 
         private void Form1_Paint(object sender, PaintEventArgs e)
         {
-            e.Graphics.DrawEllipse(new Pen(Color.Black, 2), 20, 280, 80, 80);
-            e.Graphics.DrawLine(new Pen(Color.Black, 2), 40, 270, 40, 370);
-            e.Graphics.DrawLine(new Pen(Color.Black, 2), 80, 270, 80, 370);
-            e.Graphics.DrawLine(new Pen(Color.Black, 2), 20, 320, 100, 320);
+            e.Graphics.DrawEllipse(new Pen(Color.Green, 2), 20, 280, 80, 80);
+            e.Graphics.DrawLine(new Pen(Color.Red, 2), 40, 270, 40, 370);
+            e.Graphics.DrawLine(new Pen(Color.Red, 2), 80, 270, 80, 370);
+            e.Graphics.DrawLine(new Pen(Color.White, 2), 20, 320, 100, 320);
         }
     }
 }

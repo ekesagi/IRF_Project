@@ -46,6 +46,9 @@ namespace IRF_beadando
             }
             else
             {
+                Utvonalak.Clear();
+                tbUtvonalak.Clear();
+
                 string indulovaros = cbHonnan.SelectedItem.ToString();
                 string erkezovaros = cbHova.SelectedItem.ToString();
 
@@ -107,7 +110,7 @@ namespace IRF_beadando
                 }
 
                 /*Útvonalak kiírása*/
-                tbUtvonalak.Clear();
+                
                 foreach (var utvonal in Utvonalak)
                 {
                     tbUtvonalak.Text += "OPCIÓ:";
@@ -128,7 +131,8 @@ namespace IRF_beadando
             if (saveFileDialog1.ShowDialog()==DialogResult.OK)
             {
                 StreamWriter sw = new StreamWriter(new FileStream(saveFileDialog1.FileName,FileMode.CreateNew) ,Encoding.UTF8) ;
-                sw.WriteLine("Opció sorszáma;Közlekedési eszköz;Indulási hely; Indulási idő;Érkezési hely;Érkezési idő;Időtartam(perc);Úthossz(km);Vonat típus;Kapunk-e ebédet;Autópályán megy-e;");
+                sw.WriteLine("Opció sorszáma; Közlekedési eszköz; Indulási hely; Indulási idő; Érkezési hely; Érkezési idő; Időtartam(perc);Úthossz(km);Vonat típus;Kapunk-e ebédet;Autópályán megy-e;");
+
                 for (int i = 0; i < Utvonalak.Count; i++)
                 {
                     foreach (var Jarat in Utvonalak[i])

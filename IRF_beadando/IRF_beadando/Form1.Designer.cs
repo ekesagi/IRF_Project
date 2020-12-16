@@ -44,9 +44,9 @@
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(61, 77);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(790, 26);
+            this.label1.Size = new System.Drawing.Size(758, 26);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Üdvözöljük a Travelapp alkalmazásban, kérem válassza ki a kívánt szolgáltatást!";
+            this.label1.Text = "Üdvözöljük a Bridge alkalmazásban, kérem válassza ki a kívánt szolgáltatást!";
             // 
             // btnLetrehozas
             // 

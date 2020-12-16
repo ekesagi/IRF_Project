@@ -1,3 +1,8 @@
-﻿A projekt során lesz egy absztrakt osztály, amit 'Jarat'-ként nevezek el. Ebből az absztrakt osztályból 3 osztály származik:
-'Buszjarat', 'Vonatjarat', 'Repulojarat'. Mindegyik 'Jarat' rendelkezik azonos tulajdonságokkal, amik a következőek: indulási 
+﻿A projekt során lesz egy absztrakt osztály, amit 'Jarat'-ként nevezek el, mivel általános Jarat objektumokat nem akartam létrehozni.
+Ebből az absztrakt osztályból 3 osztály származik:
+'Buszjarat', 'Vonatjarat', 'Repulojarat'. Mindhárom örökli a Jarat osztály közös tulajdonságait, amik a következőek: indulási 
 idő,megérkezési idő, az előző két tulajdonság alapján időtartam, indulási hely, érkezési hely, út hossza.
+Eltérő tulajdonsága is van a három származtatott osztálynak. 
+	buszok esetében: meg lehet adni, hogy autópályán halad-e
+	repülő esetében: meg lehet adni, hogy kapunk-e az út során ebédet
+	vonat esetében: ki lehet választani milyen típusú vonattal utazunk (InterCity, gyorsvonat, személyvonat)

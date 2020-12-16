@@ -8,7 +8,6 @@ hogy autópályán halad-e a busz, repülő esetén ki lehet választani, hogy k
 információt adni, hogy InterCity-vel, személyvonattal vagy pedig gyorsvonattal utaztunk.)
 -útvonal alapján keresés időpont szerint
 -az útvonalak exportálása CSV-be (3.tétel: A)
--a főoldalon megtalálható a cég logója is, amely egy földgömböt ábrázol rajta egy H betűvel, ami Magyarországot jelképezi
-
-
-
+-a főoldalon megtalálható a cég logója is, amely egy földgömböt ábrázol rajta egy H betűvel, ami színeivel együtt
+Magyarországot jelképezi (4.tétel: E)
+-bár a következő nem funkció de a Jarmu osztály indulási és érkezési idejéhez tatozik setter metódus (2.tétel: B)

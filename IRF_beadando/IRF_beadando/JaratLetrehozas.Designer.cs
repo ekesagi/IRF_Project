@@ -108,7 +108,7 @@
             // 
             // dtpInduasiIdo
             // 
-            this.dtpInduasiIdo.CustomFormat = "MM/dd/yyyy HH:mm:ss";
+            this.dtpInduasiIdo.CustomFormat = "yyyy/MM/dd HH:mm:ss";
             this.dtpInduasiIdo.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpInduasiIdo.Location = new System.Drawing.Point(475, 396);
             this.dtpInduasiIdo.Name = "dtpInduasiIdo";
@@ -117,7 +117,7 @@
             // 
             // dtpErkezesiIdo
             // 
-            this.dtpErkezesiIdo.CustomFormat = "MM/dd/yyyy HH:mm:ss";
+            this.dtpErkezesiIdo.CustomFormat = "yyyy/MM/dd HH:mm:ss";
             this.dtpErkezesiIdo.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpErkezesiIdo.Location = new System.Drawing.Point(475, 461);
             this.dtpErkezesiIdo.Name = "dtpErkezesiIdo";
@@ -188,7 +188,7 @@
             // lblVonatTipusa
             // 
             this.lblVonatTipusa.AutoSize = true;
-            this.lblVonatTipusa.Location = new System.Drawing.Point(714, 141);
+            this.lblVonatTipusa.Location = new System.Drawing.Point(714, 146);
             this.lblVonatTipusa.Name = "lblVonatTipusa";
             this.lblVonatTipusa.Size = new System.Drawing.Size(87, 17);
             this.lblVonatTipusa.TabIndex = 17;
@@ -202,7 +202,7 @@
             "InterCity",
             "Gyorsvonat",
             "Személyvonat"});
-            this.cbVonatTipusa.Location = new System.Drawing.Point(807, 138);
+            this.cbVonatTipusa.Location = new System.Drawing.Point(807, 143);
             this.cbVonatTipusa.Name = "cbVonatTipusa";
             this.cbVonatTipusa.Size = new System.Drawing.Size(121, 24);
             this.cbVonatTipusa.TabIndex = 18;
@@ -211,7 +211,7 @@
             // cbKapunkEEbedet
             // 
             this.cbKapunkEEbedet.AutoSize = true;
-            this.cbKapunkEEbedet.Location = new System.Drawing.Point(717, 168);
+            this.cbKapunkEEbedet.Location = new System.Drawing.Point(717, 145);
             this.cbKapunkEEbedet.Name = "cbKapunkEEbedet";
             this.cbKapunkEEbedet.Size = new System.Drawing.Size(224, 21);
             this.cbKapunkEEbedet.TabIndex = 19;
@@ -222,7 +222,7 @@
             // cbAutoPalyanMegyE
             // 
             this.cbAutoPalyanMegyE.AutoSize = true;
-            this.cbAutoPalyanMegyE.Location = new System.Drawing.Point(717, 195);
+            this.cbAutoPalyanMegyE.Location = new System.Drawing.Point(717, 144);
             this.cbAutoPalyanMegyE.Name = "cbAutoPalyanMegyE";
             this.cbAutoPalyanMegyE.Size = new System.Drawing.Size(235, 21);
             this.cbAutoPalyanMegyE.TabIndex = 20;
